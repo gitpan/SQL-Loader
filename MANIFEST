@@ -3,7 +3,7 @@ lib/SQL/Loader.pm
 lib/SQL/Loader/MySQL.pm
 t/constructs.t
 t/dbh.t
-sql_loader_example.txt
+sql_loader_example.pl
 README
 INSTALL
 MANIFEST

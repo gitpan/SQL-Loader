@@ -5,11 +5,15 @@ use warnings;
 
 =head1 NAME
 
-sql_loader.pl
+sql_loader_example.pl
 
 =head1 SYNOPSIS
 
-perl sql_loader.pl --url=<schema url> --dbname=<dbname> --dbuser=<dbuser> --dbpass=<dbpass> [ --print_http_headers --help --quiet ]
+perl sql_loader_example.pl --url=<schema url> --dbname=<dbname> --dbuser=<dbuser> --dbpass=<dbpass> [ --quiet ]
+
+perl sql_loader_example.pl --url=<schema url> --print_http_headers
+
+perl sql_loader_example.pl --help
 
 =head2 Arguments:
 
@@ -74,9 +78,15 @@ $loader->run;
 
 sub _usage {
 	print <<EOF;
-perl data_loader.pl [ --url=<schema url> --dbname=<dbname> --dbuser=<dbuser> --dbpass=<dbpass> --print_http_headers --help --quiet ]
+Usage:
 
-Optional arguments:
+perl $0 --url=<schema url> --dbname=<dbname> --dbuser=<dbuser> --dbpass=<dbpass> [ --quiet ]
+
+perl $0 --url=<schema url> --print_http_headers
+
+perl $0 --help
+
+Arguments:
 
 	- Pass the url to use to scrape db schema from with --url flag.
 	- specify dbname with --dbname

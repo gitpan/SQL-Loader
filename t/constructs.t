@@ -9,10 +9,6 @@ t/constructs.t
 
 constructor pass / fail tests.
 
-=head1 AUTHOR
-
-<benhare@gmail.com>
-
 =cut
 use strict;
 use warnings;
@@ -20,7 +16,9 @@ use Test::More tests  => 16;
 use Test::Exception;
 use lib qw( ./lib );
 
-use_ok( 'SQL::Loader::MySQL' );
+BEGIN {
+	use_ok( 'SQL::Loader::MySQL' );
+};
 
 my $loader;
 my $dbname = $ENV{LOADER_DBNAME} || 'loader_test';
@@ -66,4 +64,9 @@ can_ok( $loader, ( 'connect_string' ) );
 
 __END__
 
+=head1 AUTHOR
+
+<benhare@gmail.com>
+
+=cut
 

@@ -1,9 +1,5 @@
+perl Makefile.PL
 make
 make test
 make install
-
-requires:
-
-Test::More
-Test::Exception
 

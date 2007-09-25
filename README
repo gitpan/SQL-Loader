@@ -50,5 +50,5 @@ Your HTML page can have pretty much any code you like bar any <h2> and <h3> tags
 module, especially if the are followed by a table. Your best bet is to not have any other <h2> or <h3>
 tags on the page to be parsed.
 
-An example script 'sql_loader_example.txt' is included in this distribution.
+An example script 'sql_loader_example.pl' is included in this distribution.
 
